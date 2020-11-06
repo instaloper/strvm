@@ -5,7 +5,7 @@
 ![Badges](https://www.synopsys.com/blogs/software-security/wp-content/uploads/CoPilotBadge.png)
 
 
-> Fast Ethereum Virtual Machine implementation
+> Fast Store Virtual Machine implementation
 
 _strvm_ is a C++ implementation of the Ethereum Virtual Machine (STRVM). 
 Created by members of the [strwasm] team, the project aims for clean, standalone STRVM implementation 
