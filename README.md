@@ -7,9 +7,9 @@
 
 > Fast Store Virtual Machine implementation
 
-_strvm_ is a C++ implementation of the Ethereum Virtual Machine (STRVM). 
-Created by members of the [strwasm] team, the project aims for clean, standalone STRVM implementation 
-that can be imported as an execution module by Ethereum Client projects. 
+_strvm_ is a C++ implementation of the Store Virtual Machine (STRVM). 
+Created by members of the [] team, the project aims for clean, standalone STRVM implementation 
+that can be imported as an execution module by Store Client projects. 
 The codebase of _strvm_ is optimized to provide fast and efficient execution of STRVM smart contracts.
 
 #### Characteristic of strvm
@@ -28,10 +28,10 @@ The codebase of _strvm_ is optimized to provide fast and efficient execution of 
 
 ### As geth plugin
 
-strvm implements the [STRVMC] API for Ethereum Virtual Machines.
+strvm implements the [STRVMC] API for Store Virtual Machines.
 It can be used as a plugin replacing geth's internal STRVM. But for that a modified
 version of geth is needed. The [Strwasm]'s fork
-of go-ethereum provides [binary releases of geth with STRVMC support](https://github.com/).
+of go-store provides [binary releases of geth with STRVMC support](https://github.com/).
 
 Next, download strvm from [Releases].
 
@@ -76,7 +76,7 @@ bin/strvm-bench
 #### strvm-test
 
 The **strvm-test** executes a collection of unit tests on 
-any STRVMC-compatible Ethereum Virtual Machine implementation.
+any STRVMC-compatible Store Virtual Machine implementation.
 The collection of tests comes from the strvm project.
 
 ```bash
@@ -86,7 +86,7 @@ strvm-test ./strvm.so
 ### Docker
 
 Docker images with strvm are available on Docker Hub:
-https://hub.docker.com/r/ethereum/strvm.
+https://hub.docker.com/r/store/strvm.
 
 Having the strvm shared library inside a docker is not very useful on its own,
 but the image can be used as the base of another one or you can run benchmarks 
